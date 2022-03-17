@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+Tuan Anh Copyright (c)  Copyright Holder All Rights Reserved.
+Extra features:
+End-of-game noti
+Transitions
+Multiple backgrounds
+Different sizes
+ -->
+<html>
+<head>
+<title></title>
+<script src="script.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="game">
+
+    <table id="table">
+    </table>
+
+    <br/>
+    <div id="moves"></div>
+  </div>
+  <button id="start" onclick="NewGame()"> Start a new game
+  </button>
+  <div id="select">
+  Select difficulty:
+  <select id="difficult">
+    <option value="4">4x4</option>
+    <option value="5">5x5</option>
+    <option value="6">6x6</option>
+    <option value="8">8x8</option>
+  </select>
+  <br/>
+  Select image:
+  <div>
+  <input class="image" onclick="ShowImage(1)" value="Select 1" type="button"></input>
+  <input class="image" onclick="ShowImage(2)" value="Select 2" type="button"></input>
+  <input class="image" onclick="ShowImage(3)" value="Select 3" type="button"></input>
+  <input class="image" onclick="ShowImage(4)" value="Select 4" type="button"></input>
+  </div>
+  <br/>
+  <div id="imgsel"></div>
+  </div>
+  <div id="victory"></div>
+</body>
+</html>
